@@ -11,6 +11,61 @@ let btn = document.querySelector('#btn')
 
 
 btn.addEventListener('click' , function (){
+    
+    // method two
+    if (word.value === ""){
+        alert ("please enter a word or phrase")
+    }
+
+    let arrWithNospace = []
+    let arrReverse = []
+
+    let allCharacters=''
+
+    // 1st remove all spaces and special characters 
+    for (let i = 0; i <word.value.length; i++){
+
+        let characters = word.value[i]
+        if (+characters){
+        allCharacters += characters
+    }
+    else if (characters.toLowerCase() !== characters.toUpperCase()){
+        allCharacters += characters
+
+    }
+
+    }
+    let wordInLowerCase = allCharacters.toLowerCase()
+
+
+    //      Using two arrays to diffenciate the regular string and the revese string 
+
+    for (let i in wordInLowerCase){
+        arrWithNospace.unshift(wordInLowerCase[i])
+        arrReverse.push(wordInLowerCase[i])
+    }
+
+
+    // iterating through the two array to ditermine is it palindrone
+
+    for (let i = 0; i < arrWithNospace.length; i++){
+        if (arrWithNospace[i]=== arrReverse[i]){
+            document.querySelector('span').innerText=`${word.value} : its Palindrome`
+        }
+        else {
+            document.querySelector('span').innerText= `${word.value} , is not Palindrome`
+        }
+    }
+    console.log(arrWithNospace)
+    console.log(arrReverse)
+
+    word.value = ""
+
+
+  // method 0ne
+
+
+/*
     if (word.value === ""){
         alert ("please enter a word or phrase")
     }
@@ -31,9 +86,10 @@ btn.addEventListener('click' , function (){
     document.querySelector('span').innerText= `${word.value} , is not Palindrome`
 
     word.value = ""
+
+ */
         
     })
-
 
 //     const myText = '  abc def ghi   ';
 // const newText = myText.split(' ').join('').split('').reverse().join('');
