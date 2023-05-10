@@ -66,7 +66,7 @@ p {
 #results {
   background-color: #fff;
   padding: 3px;
-  width: 50%;
+  width: auto;
   text-align: center;
 
   #results p {
