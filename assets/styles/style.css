@@ -7,14 +7,13 @@
 
 body {
   font-family: poppins, sans-serif;
-  background-color: #f5f7f6;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: aquamarine;
+  background-color: rgb(52, 136, 185);
   width: 60vw;
   height: 45vh;
   align-items: center;
@@ -23,7 +22,7 @@ body {
 }
 
 .subContainer {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -31,6 +30,7 @@ body {
 
 h2 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 input {
@@ -45,18 +45,46 @@ input {
 button {
   top: 0;
   padding: 0 5px;
-  background-color: #199c9c;
+  background-color: #346161;
   border: none;
   transition: .3s ease-in;
   color: #ffffff;
+  /* width: 50px; */
 }
 
 button:hover {
-  background-color: #346161;
+  background-color: #05121b;
   color: #cfc5c5;
 }
 
 p {
   font-weight: 300;
-  color: #4d4b4b;
+  color: #f0dfdf;
+  text-align: center;
+}
+
+#results {
+  background-color: #fff;
+  padding: 3px;
+  width: 50%;
+  text-align: center;
+
+  #results p {
+  overflow: hidden;
+
+  }
+  
+
+}
+
+@media screen and  (max-width: 775px){
+  .main-container {
+  width: 100vw;
+  margin: 0 auto;
+
+  }
+
+  .subContainer {
+
+  }
 }

@@ -10,8 +10,8 @@ let btn = document.querySelector('#btn')
 
 
 
-btn.addEventListener('click' , function (){
-    
+btn.addEventListener('click' , function (e){
+    e.preventDefault()
     // method two
     if (word.value === ""){
         alert ("please enter a word or phrase")
@@ -49,11 +49,15 @@ btn.addEventListener('click' , function (){
     // iterating through the two array to ditermine is it palindrone
 
     for (let i = 0; i < arrWithNospace.length; i++){
+
+        
         if (arrWithNospace[i]=== arrReverse[i]){
-            document.querySelector('span').innerText=`${word.value} : its Palindrome`
+            document.querySelector('span').innerText=`${word.value} : is Palindrome`
+            document.querySelector('span').style.color="green"
         }
         else {
-            document.querySelector('span').innerText= `${word.value} , is not Palindrome`
+            document.querySelector('span').innerText= `${word.value} : not Palindrome`
+            document.querySelector('span').style.color="red"
         }
     }
     console.log(arrWithNospace)
