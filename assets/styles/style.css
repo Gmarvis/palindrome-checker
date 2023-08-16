@@ -47,7 +47,7 @@ button {
   padding: 0 5px;
   background-color: #346161;
   border: none;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
   color: #ffffff;
   /* width: 50px; */
 }
@@ -70,21 +70,13 @@ p {
   text-align: center;
 
   #results p {
-  overflow: hidden;
-
+    overflow: hidden;
   }
-  
-
 }
 
-@media screen and  (max-width: 775px){
+@media screen and (max-width: 775px) {
   .main-container {
-  width: 100vw;
-  margin: 0 auto;
-
-  }
-
-  .subContainer {
-
+    width: 100vw;
+    margin: 0 auto;
   }
 }
