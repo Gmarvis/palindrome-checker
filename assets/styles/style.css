@@ -21,7 +21,7 @@ body {
   padding: 0 10px;
 }
 
-.sub_container {
+.sub-container {
   width: 90%;
   display: flex;
   justify-content: space-between;
