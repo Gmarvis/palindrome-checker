@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(52, 136, 185);
+  background-color: #3488b9;
   width: 60vw;
   height: 45vh;
   align-items: center;
@@ -21,7 +21,7 @@ body {
   padding: 0 10px;
 }
 
-.subContainer {
+.sub_container {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -48,8 +48,7 @@ button {
   background-color: #346161;
   border: none;
   transition: 0.3s ease-in;
-  color: #ffffff;
-  /* width: 50px; */
+  color: #fff;
 }
 
 button:hover {
