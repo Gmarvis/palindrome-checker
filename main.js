@@ -10,8 +10,6 @@ const btn = document.querySelector('#btn')
 btn.addEventListener('click', function (e) {
   e.preventDefault()
 
-  // method 0ne
-
   // we first prevent the submition of an empty string
 
   if (word.value === '') {
