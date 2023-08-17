@@ -39,12 +39,11 @@ btn.addEventListener('click', function (e) {
     document.querySelector('span').innerText = `${word.value} : Is Palindrome`
     document.querySelector('span').style.color = 'green'
     return
-    }
-  // here we check if it doesnt equals.
+  }
   else {
     document.querySelector('span').innerText = `${word.value} : not Palindrome`
   } // we print the the dom our results
   document.querySelector('span').style.color = 'red'
 
   word.value = ''
-})
+  })
